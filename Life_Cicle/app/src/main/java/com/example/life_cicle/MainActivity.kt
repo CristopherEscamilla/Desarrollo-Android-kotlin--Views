@@ -15,8 +15,7 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
 
     //String, Int, Double, Float, y Boolean
-    val count: Int = 2
-    val count2 = 1
+    private var count: Int = 0
     private val TAG = "MyActivityLifecycle"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,8 +30,19 @@ class MainActivity : AppCompatActivity() {
         val buttonToast = findViewById<Button>(R.id.button_toast)
         val buttonCount = findViewById<Button>(R.id.button_count)
         val textView = findViewById<TextView>(R.id.text_count)
-        var count = 0
-        Log.w(TAG, "count1: ${count + count2}")
+        /**
+        if (savedInstanceState != null) {
+            // Restaurar el estado desde savedInstanceState
+            count = savedInstanceState.getInt("myKey", 0) // Proporciona un valor predeterminado
+            textView.text = count.toString()
+            Log.d(TAG, "Estado restaurado en onCreate(). count: $count")
+        } else {
+            // Inicializar el estado por primera vez si no hay estado guardado
+            Log.d(TAG, "Inicializando estado por primera vez en onCreate(). count: $count")
+        }
+       */
+
+        Log.w(TAG, "count1: ${count }")
         buttonToast.setOnClickListener {
             Toast.makeText(this, "Hola soy un Toast", Toast.LENGTH_SHORT).show()
         }
@@ -40,9 +50,6 @@ class MainActivity : AppCompatActivity() {
             textView.text = count.toString()
             count++
         }
-
-        Log.w(TAG, "count2: ${count }")
-
     }
 
     fun showCount(): Unit {
@@ -90,4 +97,25 @@ class MainActivity : AppCompatActivity() {
         // La actividad está siendo destruida
         // Limpieza final de recursos}
     }
+
+    // También es importante para guardar el estado de la UI antes de que la actividad sea destruida
+    // por un cambio de configuración o por el sistema.
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Log.d(TAG, "onSaveInstanceState() llamado")
+        // Guarda aquí el estado dinámico de la UI
+        outState.putInt("myKey", count)
+    }
+
+     // Y para restaurar el estado en onCreate o onRestoreInstanceState
+     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+         super.onRestoreInstanceState(savedInstanceState)
+         Log.d(TAG, "onRestoreInstanceState() llamado")
+         // Restaura aquí el estado dinámico de la UI
+        // val myValue = savedInstanceState.getString("myKey")
+         // savedInstanceState aquí nunca será null
+         count = savedInstanceState.getInt("myKey")
+         findViewById<TextView>(R.id.text_count).text = count.toString()
+         Log.d(TAG, "Estado restaurado en onRestoreInstanceState(). count: $count")
+     }
 }
