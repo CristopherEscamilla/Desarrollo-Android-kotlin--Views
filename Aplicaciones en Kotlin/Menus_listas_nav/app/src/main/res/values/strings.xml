@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Menus_listas_nav</string>
+    <string name="app_bar_settings">Configuracion</string>
+    <string name="app_bar_account">Mi cuenta</string>
+    <string name="app_bar_about">Acerca de mi</string>
+    <string name="app_bar_version">Version</string>
+    <string name="description_app_bar_about">menu desplegable, opcion acerca de mi</string>
+    <string name="description_app_bar_version">menu desplegable, opcion notas de la version</string>
+    <string name="description_app_bar_settings">top app bar, opcion mi cuenta</string>
+    <string name="description_app_bar_account">top app bar, opcion configuracion</string>
+    <string name="title_page">My books</string>
+    <string name="drawer_labels_subheader_tittle">labels_subheader_title</string>
+    <string name="drawer_label_1">label_one_title</string>
+    <string name="drawer_label_2">label_two_title</string>
+    <string name="drawer_search_title">search_title</string>
+    <string name="drawer_3d_title">3d_title</string>
+    <string name="drawe_accelerator_title">accelerator_title</string>
+    <string name="drawer_dashboard_title">dashboard_title</string>
+    <string name="drawer_mail_header">mail_subheader_title</string>
+    <string name="drawer_header_title">header_title</string>
+    <string name="drawer_header_text">header_text</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

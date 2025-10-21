@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Listas_Adaptador</string>
+    <string name="tv_header">Lista de Alumnos</string>
+</resources>

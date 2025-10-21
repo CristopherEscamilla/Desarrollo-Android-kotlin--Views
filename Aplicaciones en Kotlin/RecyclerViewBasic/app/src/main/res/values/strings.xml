@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">RecyclerViewBasic</string>
+    <string name="add_flower">Add Flower</string>
+
+    <string name="flower1_name">Rose</string>
+    <string name="flower2_name">Freesia</string>
+    <string name="flower3_name">Lily</string>
+    <string name="flower4_name">Sunflower</string>
+    <string name="flower5_name">Peony</string>
+    <string name="flower6_name">Daisy</string>
+    <string name="flower7_name">Lilac</string>
+    <string name="flower8_name">Marigold</string>
+    <string name="flower9_name">Poppy</string>
+    <string name="flower10_name">Daffodil</string>
+    <string name="flower11_name">Dahlia</string>
+    <string name="flower12_name">Tulip</string>
+
+    <string name="flower1_description">Rose comes from the Latin word Rosa. There are over 100
+        species of the rose. </string>
+    <string name="flower2_description">Freesias bloom during spring and are native to
+        Africa.</string>
+    <string name="flower3_description">Lilies have the longest in vase lifespan of any cut
+        bloom.</string>
+    <string name="flower4_description">Mature Sunflowers face east and are native too the United
+        States.</string>
+    <string name="flower5_description">Peony plants can live to be 100 years old.</string>
+    <string name="flower6_description">Daisies are cousins with Sunflowers.</string>
+    <string name="flower7_description">Lilacs belong to the olive family.</string>
+    <string name="flower8_description">Marigolds come in orange, reed, maroon and yellow.</string>
+    <string name="flower9_description">Poppies can be over 3 feet tall.</string>
+    <string name="flower10_description">Daffodils are referred to as Lent Lilies in England</string>
+    <string name="flower11_description">Dahlia is named after the Swedish botanist Anders
+        Dahl</string>
+    <string name="flower12_description">There are over 150 species of tulips.</string>
+
+    <string name="flower_string">Flowers</string>
+    <string name="flower_finder">Flower finder</string>
+    <string name="flower_description_edit_text">Flower Description</string>
+    <string name="flower_name_edit_text">Flower Name</string>
+    <string name="done_button_text">Done</string>
+    <string name="fab_content_description">fab</string>
+    <string name="flower_image_content_description">Image of flower</string>
+    <string name="remove_this_flower">Remove this flower</string>
+
+    <!-- Nombres de espadas -->
+    <string name="sword_copper_shortsword">Espada corta de cobre</string>
+    <string name="sword_tin_shortsword">Espada corta de estaño</string>
+    <string name="sword_iron_shortsword">Espada corta de hierro</string>
+    <string name="sword_lead_shortsword">Espada corta de plomo</string>
+    <string name="sword_silver_shortsword">Espada corta de plata</string>
+    <string name="sword_tungsten_shortsword">Espada corta de tungsteno</string>
+    <string name="sword_gold_shortsword">Espada corta de oro</string>
+    <string name="sword_platinum_shortsword">Espada corta de platino</string>
+    <string name="sword_ruler">Regla</string>
+    <string name="sword_gladius">Gladio</string>
+    <string name="sword_wooden_sword">Espada de madera</string>
+    <string name="sword_rich_mahogany_sword">Espada de madera de caoba rica</string>
+    <string name="sword_boreal_wood_sword">Espada de madera boreal</string>
+    <string name="sword_palm_wood_sword">Espada de madera de Palmera</string>
+    <string name="sword_cactus_sword">Espada de cactus</string>
+    <string name="sword_copper_broadsword">Espada larga de cobre</string>
+    <string name="sword_tin_broadsword">Espada larga de estaño</string>
+    <string name="sword_shadewood_sword">Espada de madera sombría</string>
+    <string name="sword_ebonwood_sword">Espada de madera de ébano</string>
+    <string name="sword_pearlwood_sword">Espada de madera perlada</string>
+    <string name="sword_iron_broadsword">Espada larga de hierro</string>
+    <string name="sword_lead_broadsword">Espada larga de plomo</string>
+    <string name="sword_silver_broadsword">Espada larga de plata</string>
+    <string name="sword_tungsten_broadsword">Espada larga de tungsteno</string>
+    <string name="sword_gold_broadsword">Espada larga de oro</string>
+    <string name="sword_platinum_broadsword">Espada Larga de Platino</string>
+    <string name="sword_zombie_arm">Brazo de Zombi</string>
+    <string name="sword_ice_blade">Espada de Hielo</string>
+    <string name="sword_mandible_blade">Mandoble</string>
+    <string name="sword_candy_cane_sword">Espada Bastón de Caramelo</string>
+    <string name="sword_bone_sword">Espada de hueso</string>
+    <string name="sword_ice_sickle">Hoz de Hielo</string>
+    <string name="sword_death_sickle">Hoz Mortífera</string>
+    <string name="sword_katana">Katana</string>
+    <string name="sword_lights_bane">Azote de la Luz</string>
+    <string name="sword_muramasa">Muramasa</string>
+    <string name="sword_phaseblade">Sable de Luz</string>
+    <string name="sword_blood_butcherer">Espada Carnicera</string>
+    <string name="sword_starfury">Furia de las Estrellas</string>
+    <string name="sword_bee_keeper">Apicultora</string>
+    <string name="sword_blade_of_grass">Espada de Hierba</string>
+    <string name="sword_falcon_blade">Filo de Halcón</string>
+    <string name="sword_fiery_greatsword">Volcán</string>
+    <string name="sword_nights_edge">Filo de la Noche</string>
+    <string name="sword_breaker_blade">Espada despedazadora</string>
+    <string name="sword_terragrim">Terragrim</string>
+    <string name="sword_enchanted_sword">Espada encantada</string>
+    <string name="sword_arkhalis">Arkhalis</string>
+    <string name="sword_cobalt_sword">Espada de Cobalto</string>
+    <string name="sword_palladium_sword">Espada de paladio</string>
+    <string name="sword_mythril_sword">Espada de mithril</string>
+    <string name="sword_orichalcum_sword">Espada de oricalco</string>
+    <string name="sword_adamantite_sword">Espada de Adamantita</string>
+    <string name="sword_titanium_sword">Espada de titanio</string>
+    <string name="sword_frostbrand">Espada helada/Acero Helado</string>
+    <string name="sword_seedler">Semillera</string>
+    <string name="sword_cutlass">Alfanje</string>
+    <string name="sword_keybrand">Llave-espada</string>
+    <string name="sword_beam_aword">Espada Lumínica</string>
+    <string name="sword_chlorophyte_saber">Sable de clorofita</string>
+    <string name="sword_bladetongue">Lengua afilada</string>
+    <string name="sword_excalibur">Excalibur</string>
+    <string name="sword_chlorophyte_claymore">Claymore de clorofita</string>
+    <string name="sword_true_excalibur">Excalibur verdadera</string>
+    <string name="sword_true_nights_edge">Espada de la noche verdadera</string>
+    <string name="sword_terra_blade">Espada Terra</string>
+    <string name="sword_christmas_tree_sword">Espada Árbol de Navidad</string>
+    <string name="sword_the_horsemans_blade">Espada del Jinete</string>
+    <string name="sword_tizona">Tizona</string>
+    <string name="sword_meowmere">Filomiau</string>
+    <string name="sword_influx_waver">Generadora de Flujos</string>
+    <string name="sword_star_wrath">Ira Estelar</string>
+    <string name="sword_psycho_knife">Cuchillo de Psicópata</string>
+    <string name="sword_flying_dragon">Dragón Volador</string>
+    <string name="sword_brand_of_the_inferno">Marca del Infierno</string>
+    <string name="sword_zenith">Cénit</string>
+
+    <!-- Velocidades (recursos compartidos) -->
+    <string name="speed_very_fast">Muy Rápido</string>
+    <string name="speed_fast">Rápido</string>
+    <string name="speed_normal">Normal</string>
+    <string name="speed_slow">Lento</string>
+    <string name="speed_quick">Deprisa</string>
+    <string name="speed_very_quick">Rapido</string>
+    <string name="speed_fast_custom">A gran velocidad</string>
+
+    <!-- Orígenes -->
+    <string name="origin_initial">Al Iniciar / Creación</string>
+    <string name="origin_creation">Creación</string>
+    <string name="origin_goblin">Vendida por el duende chapucero</string>
+    <string name="origin_hoplite">Dejado por Hoplita</string>
+    <string name="origin_zombies">Zombis</string>
+    <string name="origin_ice_chests">Cofres helados</string>
+    <string name="origin_antlion_loader">Cargador de hormigas leóns</string>
+    <string name="origin_gifts">Regalos</string>
+    <string name="origin_undead_miner">Minero no muerto</string>
+    <string name="origin_iron_chest">Caja de hierro</string>
+    <string name="origin_reapers">Reapers</string>
+    <string name="origin_ambulant_merchant">Mercader ambulante</string>
+    <string name="origin_dungeon_chests">Cofres de la mazmorra</string>
+    <string name="origin_floating_islands">Cofres y cajas en islas flotantes</string>
+    <string name="origin_carnivorous_wall">Muro carnoso</string>
+    <string name="origin_stone_sword_chance_10">10% de probabilidades al romper la "Espada en la piedra"</string>
+    <string name="origin_stone_sword_chance_90">90% de probabilidades al romper la "Espada en la piedra"</string>
+    <string name="origin_treasure_bags">Bolsas del tesoro</string>
+    <string name="origin_false_ice_chest">Cofre falsos de hielo</string>
+    <string name="origin_plantera">Plantera</string>
+    <string name="origin_skeleton_armored">Esqueleto con armadura</string>
+    <string name="origin_sea">Pescando en el Carmesí</string>
+    <string name="origin_lunar_lord">Señor de la Luna</string>
+    <string name="origin_martian_dish">Platillo marciano</string>
+    <string name="origin_pirate_invasion">Invasión pirata</string>
+    <string name="origin_betsy">Betsy</string>
+    <string name="origin_ogre">Ogro</string>
+
+</resources>

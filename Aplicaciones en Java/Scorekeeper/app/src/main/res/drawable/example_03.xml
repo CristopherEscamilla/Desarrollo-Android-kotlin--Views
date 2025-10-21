@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- Borde con colores múltiples -->
+    <stroke
+        android:width="8dp"
+        android:color="#FF0000" /> <!-- Color inicial del borde -->
+    <gradient
+        android:type="sweep"
+        android:startColor="#24E40E"
+        android:centerColor="#FFFF00"
+        android:endColor="#1BB0BD" />
+</shape>

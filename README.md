@@ -19,6 +19,31 @@ Cada proyecto está diseñado para ser **simple pero educativo**, ideal para que
 
 ---
 
+# 📂 Directorio de Proyectos
+
+Este repositorio contiene diferentes proyectos organizados por lenguaje de programación.
+
+---
+
+## ☕ Aplicaciones en Java
+
+- [Almacenamiento](./Aplicaciones%20en%20Java/Almacenamiento)
+- [Droid_Cafe](./Aplicaciones%20en%20Java/Droid_Cafe)
+- [Listas](./Aplicaciones%20en%20Java/listas)
+- [Listas Personalizadas](./Aplicaciones%20en%20Java/Listas%20Personalizadas)
+- [ListCC](./Aplicaciones%20en%20Java/ListCC)
+- [Scorekeeper](./Aplicaciones%20en%20Java/Scorekeeper)
+- [SharedPreferencer](./Aplicaciones%20en%20Java/SharedPreferencer)
+
+---
+
+## 🧠 Aplicaciones en Kotlin
+
+- [Intents](./Aplicaciones%20en%20Kotlin/Intents)
+- [Life_Cicle](./Aplicaciones%20en%20Kotlin/Life_Cicle)
+- [Menus_listas_nav](./Aplicaciones%20en%20Kotlin/Menus_listas_nav)
+- [ReciclerViewBAsic](./Aplicaciones%20en%20Kotlin/ReciclerViewBAsic)
+
 ## 🛠️ Tecnologías y herramientas
 
 - Kotlin 🖤  
@@ -27,4 +52,4 @@ Cada proyecto está diseñado para ser **simple pero educativo**, ideal para que
 - XML para layouts  
 - Git y GitHub para control de versiones  
 
----
+  ---
