@@ -1,6 +1,12 @@
 pluginManagement {
     repositories {
-        google()
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
         mavenCentral()
         gradlePluginPortal()
     }
@@ -16,6 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Droid_Cafe"
+rootProject.name = "Navegacion_Menus"
 include(":app")
- 

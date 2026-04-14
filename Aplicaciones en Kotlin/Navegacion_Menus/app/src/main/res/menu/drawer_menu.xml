@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_launcher_foreground"
+                android:title="@string/menu_drawer_inicio" />
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_launcher_foreground"
+                android:title= "@string/menu_drawer_mi_perfil" />
+            <item
+                android:id="@+id/nav_favorites"
+                android:icon="@drawable/ic_favorite_24dp"
+                android:title="@string/menu_drawer_favoritos" />
+        </group>
+
+    <item android:title="@string/menu_drawer_sub_aplicacion">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_launcher_foreground"
+                android:title="@string/menu_drawe_configuracion" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_launcher_foreground"
+                android:title="@string/menu_drawer_acerca_de" />
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_drawer_sub_sesion">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_launcher_foreground"
+                android:title="@string/menu_drawer_cerrar_sesion" />
+        </menu>
+    </item>
+
+</menu>

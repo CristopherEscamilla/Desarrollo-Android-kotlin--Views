@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Navegacion_Menus</string>
+    <string name="page_title">Top App Bar</string>
+    <string name="menu_edit">Editar</string>
+    <string name="menu_favorite">Favoritos</string>
+    <string name="menu_more01">Más</string>
+    <string name="menu_more02">Más</string>
+    <string name="menu_more03">Más</string>
+    <string name="menu_edit_description">Opcion editar en la barra de herramientas superior</string>
+    <string name="menu_favorite_description">Opcion favoritos en la barra de herramientas superior</string>
+    <string name="menu_more_description">Opcion más en la barra de herramientas superior</string>
+
+    <string name="summary_title">¿Qué es la Top App Bar?</string>
+    <string name="summary_description">La Top App Bar (también conocida como App Bar o Action Bar) es un componente esencial que se sitúa en la parte superior de la pantalla.</string>
+    <string name="summary_features_title">Funciones principales:</string>
+    <string name="summary_feature_1">• <b>Identidad:</b> Proporciona contexto sobre la pantalla actual.</string>
+    <string name="summary_feature_2">• <b>Navegación:</b> Permite acceder a menús o regresar a pantallas previas.</string>
+    <string name="summary_feature_3">• <b>Acciones:</b> Facilita el acceso a tareas clave como búsqueda o configuración.</string>
+
+    <string name="btn_navigate">Ir a Nueva Actividad</string>
+    <string name="title_second_activity">Segunda Actividad</string>
+    <string name="menu_drawer_inicio">Inicio</string>
+    <string name="menu_drawer_mi_perfil">Mi Perfil</string>
+    <string name="menu_drawer_favoritos">Favoritos</string>
+    <string name="menu_drawe_configuracion">Configuración</string>
+    <string name="menu_drawer_sub_aplicacion">Aplicación</string>
+    <string name="menu_drawer_sub_sesion">Sesión</string>
+    <string name="menu_drawer_acerca_de">Acerca de</string>
+    <string name="menu_drawer_cerrar_sesion">Cerrar sesión</string>
+
+    <string name="nav_home">Inicio</string>
+    <string name="nav_search">Buscar</string>
+    <string name="nav_notifications">Notificaciones</string>
+    <string name="nav_profile">Perfil</string>
+</resources>
