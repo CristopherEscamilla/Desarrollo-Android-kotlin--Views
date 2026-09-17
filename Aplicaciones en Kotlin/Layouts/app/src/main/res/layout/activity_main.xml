@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- Guia al 20% desde arriba/izquierda: reserva 80% para el teclado. -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/keyboard_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <TextView
+        android:id="@+id/result"
+        style="@style/CalculatorDisplay"
+        android:background="@drawable/bg_calculator_display"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/keyboard_guide" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/keyboard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_calculator_keyboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard_guide">
+        <!-- Cadenas reciprocas horizontales y verticales de igual peso. -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_seven"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_seven"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/key_eight"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/key_four"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_eight"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_eight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_seven"
+            app:layout_constraintEnd_toStartOf="@id/key_nine"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/key_five"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_nine"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_nine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_eight"
+            app:layout_constraintEnd_toStartOf="@id/key_divide"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/key_six"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_divide"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_divide"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_nine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/key_multiply"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_four"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_four"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/key_five"
+            app:layout_constraintTop_toBottomOf="@id/key_seven"
+            app:layout_constraintBottom_toTopOf="@id/key_one"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintHorizontal_chainStyle="spread" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_five"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_five"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_four"
+            app:layout_constraintEnd_toStartOf="@id/key_six"
+            app:layout_constraintTop_toBottomOf="@id/key_eight"
+            app:layout_constraintBottom_toTopOf="@id/key_two"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_six"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_six"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_five"
+            app:layout_constraintEnd_toStartOf="@id/key_multiply"
+            app:layout_constraintTop_toBottomOf="@id/key_nine"
+            app:layout_constraintBottom_toTopOf="@id/key_three"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_multiply"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_multiply"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_six"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/key_divide"
+            app:layout_constraintBottom_toTopOf="@id/key_subtract"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_one"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_one"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/key_two"
+            app:layout_constraintTop_toBottomOf="@id/key_four"
+            app:layout_constraintBottom_toTopOf="@id/key_zero"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintHorizontal_chainStyle="spread" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_two"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_two"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_one"
+            app:layout_constraintEnd_toStartOf="@id/key_three"
+            app:layout_constraintTop_toBottomOf="@id/key_five"
+            app:layout_constraintBottom_toTopOf="@id/key_decimal"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_three"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_three"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_two"
+            app:layout_constraintEnd_toStartOf="@id/key_subtract"
+            app:layout_constraintTop_toBottomOf="@id/key_six"
+            app:layout_constraintBottom_toTopOf="@id/key_equals"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_subtract"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_subtract"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_three"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/key_multiply"
+            app:layout_constraintBottom_toTopOf="@id/key_add"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_zero"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_zero"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/key_decimal"
+            app:layout_constraintTop_toBottomOf="@id/key_one"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintHorizontal_chainStyle="spread" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_decimal"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_decimal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_zero"
+            app:layout_constraintEnd_toStartOf="@id/key_equals"
+            app:layout_constraintTop_toBottomOf="@id/key_two"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_equals"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_equals"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_decimal"
+            app:layout_constraintEnd_toStartOf="@id/key_add"
+            app:layout_constraintTop_toBottomOf="@id/key_three"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_add"
+            style="@style/CalculatorKey"
+            android:text="@string/calculator_add"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/key_equals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/key_subtract"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

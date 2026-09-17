@@ -40,6 +40,7 @@ Este repositorio contiene diferentes proyectos organizados por lenguaje de progr
 ## 🧠 Aplicaciones en Kotlin
 
 - [Intents](./Aplicaciones%20en%20Kotlin/Intents)
+- [Layouts](./Aplicaciones%20en%20Kotlin/Layouts)
 - [Life_Cicle](./Aplicaciones%20en%20Kotlin/Life_Cicle)
 - [Menus_listas_nav](./Aplicaciones%20en%20Kotlin/Menus_listas_nav)
 - [ReciclerViewBAsic](./Aplicaciones%20en%20Kotlin/ReciclerViewBAsic)

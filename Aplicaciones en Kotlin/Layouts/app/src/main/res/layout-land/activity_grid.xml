@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:rowCount="1"
+    android:columnCount="2"
+    android:alignmentMode="alignBounds">
+    <!-- Pesos 1 y 4: resultado 20%, teclado 80%. -->
+    <TextView
+        android:id="@+id/result"
+        style="@style/CalculatorDisplay"
+        android:background="@drawable/bg_grid_display"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill" />
+
+    <GridLayout
+        android:id="@+id/keyboard"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_columnWeight="4"
+        android:layout_gravity="fill"
+        android:rowCount="4"
+        android:columnCount="4"
+        android:padding="8dp"
+        android:background="@drawable/bg_grid_keyboard">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_seven"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_seven"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_eight"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_eight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_nine"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_nine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_divide"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_divide"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_four"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_four"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_five"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_five"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_six"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_six"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_multiply"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_multiply"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_one"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_one"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_two"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_two"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_three"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_three"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_subtract"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_subtract"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_zero"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_zero"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_decimal"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_decimal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_equals"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_equals"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/key_add"
+            style="@style/CalculatorKey.Grid"
+            android:text="@string/calculator_add"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+    </GridLayout>
+</GridLayout>
